@@ -14,7 +14,7 @@ public class HelloWorld {
     }
 
     /**
-     * Say hello string.
+     * Say hello string with a name.
      *
      * @param name the name
      * @return the string
