@@ -9,7 +9,7 @@ public class HelloWorld {
      * @param b the b
      * @return the int
      */
-    int add(int a, int b) {
+    public int add(int a, int b) {
         return a + b;
     }
 
@@ -19,7 +19,7 @@ public class HelloWorld {
      * @param name the name
      * @return the string
      */
-    String sayHello(String name) {
+    public String sayHello(String name) {
         return "Hello, " + name + "!";
     }
 }
