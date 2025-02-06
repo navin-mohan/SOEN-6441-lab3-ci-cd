@@ -2,6 +2,7 @@
  * The type Hello world.
  */
 public class HelloWorld {
+    int count = 0;
     /**
      * Add int.
      *
@@ -20,6 +21,26 @@ public class HelloWorld {
      * @return the string
      */
     public String sayHello(String name) {
+        count++;
         return "Hello, " + name + "!";
+    }
+
+    public Runnable createLambda(String name) {
+        Runnable r = () -> System.out.println("Hello, " + name + "!");
+        return r;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public static void main(String[] args) {
+        HelloWorld hw = new HelloWorld();
+        Runnable r = hw.createLambda("John");
+        Runnable q = hw.createLambda("Sam");
+        r.run();
+        r.run();
+        q.run();
+        q.run();
     }
 }
