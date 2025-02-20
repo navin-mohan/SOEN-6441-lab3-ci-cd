@@ -14,7 +14,6 @@ public class GuessingGameView implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println("Hello");
         GuessingGameModel.State state = (GuessingGameModel.State) arg;
         this.render(state);
     }

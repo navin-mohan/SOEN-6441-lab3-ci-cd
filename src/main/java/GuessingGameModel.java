@@ -64,7 +64,6 @@ public class GuessingGameModel extends Observable {
 
     public void setState(State state) {
         this.state = state;
-        System.out.println("Set State");
         setChanged();
         notifyObservers(this.state);
     }
